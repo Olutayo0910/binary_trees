@@ -23,35 +23,8 @@ struct binary_tree_s
 };
 
 typedef struct binary_tree_s binary_tree_t;
-
-/**
- * struct bst_s - Binary Search Tree node
- *
- * @n: Integer stored in the node
- * @parent: Pointer to the parent node
- * @left: Pointer to the left child node
- * @right: Pointer to the right child node
- */
 typedef struct binary_tree_s bst_t;
-
-/**
- * struct avl_s - AVL Tree node
- *
- * @n: Integer stored in the node
- * @parent: Pointer to the parent node
- * @left: Pointer to the left child node
- * @right: Pointer to the right child node
- */
 typedef struct binary_tree_s avl_t;
-
-/**
- * struct heap_s - Max Binary Heap node
- *
- * @n: Integer stored in the node
- * @parent: Pointer to the parent node
- * @left: Pointer to the left child node
- * @right: Pointer to the right child node
- */
 typedef struct binary_tree_s heap_t;
 
 /**
