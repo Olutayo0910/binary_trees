@@ -40,7 +40,7 @@ const binary_tree_t *get_leaf(const binary_tree_t *tree)
  */
 size_t tree_depth(const binary_tree_t *tree)
 {
-	return (tree->parent != NULL ? 1 + depth(tree->parent) : 0);
+	return (tree->parent != NULL ? 1 + tree_depth(tree->parent) : 0);
 }
 
 /**
@@ -72,5 +72,5 @@ int binary_tree_is_perfect(const binary_tree_t *tree)
 {
 	if (tree == NULL)
 		return (0);
-	return (is_perfect_recursive(tree, depth(get_leaf(tree)), 0));
+	return (is_perfect_recursive(tree, tree_depth(get_leaf(tree)), 0));
 }
